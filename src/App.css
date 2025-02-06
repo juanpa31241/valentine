@@ -76,19 +76,19 @@ html {
   flex-wrap: wrap;
 }
 
-button.btn-primary {
+.btn-primary {
   padding: 12px 25px;
   font-size: 1.2em;
   font-weight: bold;
   border: 2px solid rgba(255, 255, 255, 0.6);
   border-radius: 30px;
   cursor: pointer;
-  background: linear-gradient(135deg, #9b59b6, #e91e63);
   color: white;
   font-family: "Poppins", sans-serif;
   outline: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
+  background-size: 200% 200%;
 }
 
 button:active {

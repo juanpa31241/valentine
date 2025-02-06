@@ -7,9 +7,9 @@ const BackgroundFade: React.FC<{ background: string }> = ({ background }) => {
             <motion.div
                 key={background} // Usamos el background como key para cambiar de fondo
                 className="background"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
+                initial={{ opacity: 0, filter: "brightness(0.5)", scale: 1.1 }}
+                animate={{ opacity: 1, filter: "brightness(1)", scale: 1 }}
+                exit={{ opacity: 0, filter: "brightness(0)", scale: 1.1 }} // Oscurecer antes de desaparecer
                 transition={{ duration: 1, ease: "easeInOut" }}
                 style={{
                     backgroundImage: `url(${background})`,

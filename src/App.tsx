@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Screen from "./components/Screen";
 import BackgroundFade from "./components/BackgroundFade";
 import "./App.css";
+import MusicPlayer from "./components/MusicPlayer";
 const NAME = import.meta.env.VITE_NAME
 const LITTLE_NAME = import.meta.env.VITE_LITTLE_NAME
 const App: React.FC = () => {
@@ -20,7 +21,7 @@ const App: React.FC = () => {
   const screens = [
     {
       screenNumber: 1,
-      message: `Hola señorita ${NAME} muy buenos días 😊🌞`,
+      message: `Hola mi princesa, buenos días 😊🌞`,
       background: "/bg1.png",
       buttons: [
         { text: "Hola, buenos días! 😍", className: "btn-hello  btn-primary", nextScreen: 2 },
@@ -50,7 +51,7 @@ const App: React.FC = () => {
     },
     {
       screenNumber: 4,
-      message: `¡Gracias mi ${LITTLE_NAME} hermosa, por aceptar! No sabes lo feliz que me hace saber que compartiremos este día tan especial. 🥰🐉`,
+      message: `¡Gracias novia hermosa, por aceptar! No sabes lo feliz que me hace saber que compartiremos este día tan especial. Para reclamar una carta por este emoji en el chat 🐥. Te amo 🥰❤️‍🩹`,
       background: "/bg4.png",
       buttons: [
       ],
@@ -88,7 +89,7 @@ const App: React.FC = () => {
 
   return (
     <div className="app">
-      {/* <MusicPlayer /> */}
+      <MusicPlayer />
 
       {currentScreenData && <BackgroundFade background={currentScreenData.background} />}
 

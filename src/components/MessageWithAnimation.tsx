@@ -9,7 +9,7 @@ const MessageWithAnimation: React.FC<{ message: string }> = ({ message }) => {
             className="message-container"
             initial={{ opacity: 0, y: -50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, ease: "easeOut" }}
+            transition={{ duration: 0.5, ease: "easeOut" }}
         >
             <motion.h1>
                 {letters.map((letter, index) => (
