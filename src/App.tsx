@@ -50,7 +50,7 @@ const App: React.FC = () => {
     },
     {
       screenNumber: 4,
-      message: `¡Gracias novia hermosa, por aceptar! No sabes lo feliz que me hace saber que compartiremos este día tan especial. Para reclamar una carta por este emoji en el chat 🐥. Te amo 🥰❤️‍🩹`,
+      message: `¡Gracias novia hermosa, por aceptar! No sabes lo feliz que me hace saber que compartiremos este día tan especial. Para reclamar una carta pon este emoji en el chat 🐥. Te amo 🥰❤️‍🩹`,
       background: "/bg4.png",
       buttons: [
       ],
